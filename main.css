@@ -1,0 +1,414 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url(img/bg-body.jpg);
+}
+#navigation{
+    background-image: url(img/bg-header.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    min-height: 200px;
+    max-height: 200px;
+    
+}
+
+#socialmedia{
+    float: right;
+}
+#navigation img{
+    float: left;
+}
+#navigation p{
+    display: none;
+}
+#navigation ul{
+    list-style: none;
+    float: right;
+    width: 100%;
+}
+#navigation a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:cursive;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 20px;
+}
+#navigation li{
+    float: left;
+    padding: 10px;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+
+#navigation a:hover{
+    color: white;
+}
+
+#navigation p{
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+#banner{
+    margin-top: 30px;
+    float: right;
+    min-width: 150px;
+    
+}
+
+
+
+
+#imgslider{
+    margin: 30px 50px;
+    border: 1px solid black;
+}
+
+#imgslider img{
+    width: 100%;
+}
+
+#fleximg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+#fleximg div{
+    margin: auto;
+}
+
+#fleximg img{
+    margin: auto;
+    flex-grow: 1;
+    border: 1px solid grey;
+    border-radius: 10px;
+    max-width: 120px;
+    max-height: 120px;
+
+}
+
+#fleximg h2{
+    font-size: 15px;
+    text-align: center;
+}
+
+#main{
+    width: 80%;
+    border: 1px solid grey;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    font-family: cursive;
+    padding: 20px;
+    min-height: 250px;
+}
+#main p{
+    font-size: 15px;
+    font-family:serif;
+    
+}
+#main article{
+    float: left;
+    width: 60%;
+}
+
+#main article h1{
+    font-size: 20px;
+    font-family: cursive;
+}
+    
+#main aside{
+    float: right;
+    height: auto;
+    width: 35%;
+    margin-top: 30px;
+}
+
+#video_news{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    font-family: cursive;
+    min-height: 950px;
+}
+#videos{
+    float :left;
+    border: 1px solid grey;
+    background-color: white;
+    width:35%;
+    padding: 20px;
+}
+#videos h1{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;                                                                                                                 }
+#videos video{      
+    width: 90%;
+    margin: 20px 30px;
+}
+#videos a{
+    text-align: right;
+}
+
+#news{
+    float: right;
+    border: 1px solid grey;
+    background-color: white;
+    width:55%;
+    padding: 20px;
+}
+#news h1{
+    text-align: center;
+    font-size: 25px;    
+}
+
+#news a{
+    color: black;
+}
+#news button{
+    background-color: orangered;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#news h2{
+    font-size: 20px;
+}
+#news h3{
+    font-size: 17px;
+    color: green;
+}
+
+#statement{
+    min-height: 250px;
+    background-image:url(img/bg-footer.jpg);
+    background-size: cover;
+}
+#statement article{
+    width: 80%;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.5;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top:30px;
+}
+
+footer{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+
+@media(max-width : 1100px){
+    
+    #socialmedia{
+        display: none;
+    }
+    #navigation{
+        background-size: cover;
+        margin-top: -30px;
+    }
+        #navigation ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #navigation ul li{
+        border: none;
+    }
+    #navigation a{
+        font-size: 15px;
+    }
+    #banner{
+        float: none;
+        padding: 20px;
+        display: block;
+    }
+    #banner ul{
+        display: block;
+    }
+    #banner p{
+        display: block;
+        padding-top: 15px;
+        font-size: 18px;
+    }
+    #navigation img{
+        display: none;
+    }
+    
+    
+    #main article, #main aside{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    
+    #main aside{
+        width: 70%;
+        margin: auto;
+    }
+    
+    #videos, #news{
+        float: none;
+        display: block;
+        width: 100%;
+        margin: auto;
+        margin-left: -18px;
+         white-space: wrap;
+    overflow: hidden;
+    }
+    #news{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #news h1{
+        margin-top: 0px;
+    }
+    
+    #statement{
+        max-height: 60px;
+    }
+    #statement article{
+        height: 200px;
+        padding: 5px;
+        white-space: wrap;
+    overflow: hidden;
+    }
+    footer{
+        padding: 10px;
+    }
+    
+    body{
+        background-size: contain;
+    }
+    
+    #videos video{
+        height: 200;
+        width:300;
+        justify-content: center;
+    }
+    
+    #videos a{
+        display: block;
+        
+    }
+    
+    
+}
+
+@media(max-width : 500px){
+    #statement{
+        min-height: 350px;
+    }
+    #statement article{
+        height: 300px;
+    }
+    
+    footer{
+        width: 80%;
+    }
+    
+    #main aside{
+        width: 80%;
+    }
+    #main aside video{
+        width:300;
+    }
+    #navigation p{
+        display: none;
+    }
+    #navigation{
+        min-height: 150px;
+    }
+    
+    #navigation ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #navigation ul li{
+        border: none;
+    }
+}
+
+#main1{
+    width: 80%;
+    border: 1px solid grey;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    font-family: cursive;
+    padding: 20px;
+    min-height: 250px;
+    white-space: wrap;
+    overflow: hidden;
+}
+#main1 p{
+    font-size: 15px;
+    font-family:serif;
+    
+}
+#main1 article{
+    float: left;
+    width: 60%;
+}
+
+#main2{
+    width: 80%;
+    border: 1px solid grey;
+    margin: auto;
+    background-color: white;
+    
+}
+#mulvideos{
+    white-space: wrap;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit,reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit,reset]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+    
